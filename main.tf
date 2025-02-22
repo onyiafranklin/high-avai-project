@@ -464,8 +464,8 @@ resource "aws_db_instance" "wordpress-db-team2" {
   engine                 = "mysql"
   engine_version         = "5.7"
   instance_class         = "db.t3.micro"
-  username               = local.db-cred2.username
-  password               = local.db-cred2.password
+  username               = local.db-cred.username
+  password               = local.db-cred.password
   parameter_group_name   = "default.mysql5.7"
   skip_final_snapshot    = true
   publicly_accessible    = false
